@@ -19,4 +19,12 @@ export class ProjectService {
   create(project: Project) {
     return this.http.post(`${this.baseUrl}/projects`, project);
   }
+
+  update(project: Project) {
+    return this.http.put(`${this.baseUrl}/projects/${project.id}`, project);
+  }
+
+  delete(projectId: number) {
+    return this.http.delete(`${this.baseUrl}/projects/${projectId}`);
+  }
 }
