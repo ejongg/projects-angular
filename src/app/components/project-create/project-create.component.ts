@@ -22,6 +22,7 @@ export class ProjectCreateComponent implements OnInit {
     this.projectService.create(this.project)
       .subscribe(project => {
         this.toastr.success('Project created');
+         this.project = new Project();
       });
   }
 }

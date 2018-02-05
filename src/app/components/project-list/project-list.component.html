@@ -19,7 +19,7 @@
             </td>
             <td>
                 <div class="row">
-                    <button class="btn btn-primary col action-button">Edit</button>
+                    <a [routerLink]="['edit', project.id]" class="btn btn-primary col action-button">Edit</a>
                     <button (click)="delete(project.id)" class="btn btn-danger col action-button">Delete</button>
                 </div>
             </td>

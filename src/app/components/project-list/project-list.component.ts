@@ -30,7 +30,7 @@ export class ProjectListComponent implements OnInit {
           return;
         }
 
-        this.toastr.warning('Project mark as incomplete');
+        this.toastr.warning('Project marked as incomplete');
       });
   }
 

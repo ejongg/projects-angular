@@ -14,12 +14,16 @@ import { ProjectCreateComponent } from './components/project-create/project-crea
 import { ProjectService } from './services/project.service';
 
 import { ProjectsResolver } from './resolvers/projects.resolver';
+import { ProjectResolver } from './resolvers/project.resolver';
+
+import { ProjectEditComponent } from './components/project-edit/project-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectListComponent,
-    ProjectCreateComponent
+    ProjectCreateComponent,
+    ProjectEditComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import { ProjectsResolver } from './resolvers/projects.resolver';
   ],
   providers: [
     ProjectService,
-    ProjectsResolver
+    ProjectsResolver,
+    ProjectResolver
   ],
   bootstrap: [AppComponent]
 })

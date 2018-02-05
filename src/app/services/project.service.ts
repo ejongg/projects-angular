@@ -16,6 +16,10 @@ export class ProjectService {
     return this.http.get(`${this.baseUrl}/projects`);
   }
 
+  getById(projectId) {
+    return this.http.get(`${this.baseUrl}/projects/${projectId}`);
+  }
+
   create(project: Project) {
     return this.http.post(`${this.baseUrl}/projects`, project);
   }
