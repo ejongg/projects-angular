@@ -1,0 +1,7 @@
+#add-project-button {
+    margin: 10px 0;
+}
+
+.action-button:first-child {
+    margin-right: 10px;
+}

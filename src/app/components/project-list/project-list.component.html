@@ -1,0 +1,30 @@
+<div id="project-list-container">
+    <button routerLink="create" id="add-project-button" class="btn btn-primary">Add project</button>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Completed</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let project of projects">
+            <td>{{ project.name }}</td>
+            <td>{{ project.description }}</td>
+            <td>
+                <input type="checkbox" [(ngModel)]="project.status"/>
+            </td>
+            <td>
+                <div class="row">
+                    <button class="btn btn-primary col action-button">Edit</button>
+                    <button class="btn btn-danger col action-button">Delete</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
